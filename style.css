@@ -29,6 +29,7 @@ h1, h2, h3 {
     width: 1200px;
     margin: 0 auto;
     padding: 15px;
+    overflow: hidden;
 }
 
 .menu ul {
