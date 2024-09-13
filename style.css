@@ -26,8 +26,9 @@ h1, h2, h3 {
 }
 
 .container  {
-    background: #fff;
-    /* realizar atividade */
+    width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
 }
 
 .menu ul {
@@ -42,11 +43,12 @@ h1, h2, h3 {
 .menu-responsivo {
     padding: 10px;
     font-size: 32px;
-    /* realizar atividade */
+    display: none;
 }
 
 .caixa-container {
-    /* realizar atividade */
+    width: 25%;
+    float: left;
 }
 
 
@@ -62,4 +64,54 @@ h1, h2, h3 {
     background: #27ae60;
     color: #fff;
 
+}
+
+@media screen and (max-width:992px) {
+    body {
+        background-color: var(--ametist-color);
+    }
+
+    .container {
+        width: 768px;
+    }
+
+    .caixa-container {
+        width: 33.33%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body {
+        background-color: var(--sunflower-color);
+    }
+
+    .container {
+        width: 576px;
+    }
+
+    .caixa-container {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    body {
+        background-color: var(--carrot-color);
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .caixa-container {
+        width: 100%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-responsivo {
+        display: flex;
+    }
 }
